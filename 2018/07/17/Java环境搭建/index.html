@@ -1,101 +1,164 @@
-
-
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
-  <script type="text/javascript" src="http://tajs.qq.com/stats?sId=44218032" charset="UTF-8"></script>
-  <script>
-	var _hmt = _hmt || [];
-	(function() {
-	  var hm = document.createElement("script");
-	  hm.src = "//hm.baidu.com/hm.js?7192fa361f5cabb11d8a22de41c1ba8f";
-	  var s = document.getElementsByTagName("script")[0]; 
-	  s.parentNode.insertBefore(hm, s);
-	})();
-	</script>
   
   <title>Java环境搭建 | Gushiii</title>
-  <meta name="author" content="gushiii">
-  
-  <meta name="description" content="Blog">
-  
-  
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-  <meta property="og:title" content="Java环境搭建"/>
-  <meta property="og:site_name" content="Gushiii"/>
+  
+    <meta name="keywords" content="MinHow,MinHow's Blog" />
+  
+  <meta name="description" content="JDK安装和配置下载JDK在Oracle官网下载 1http://www.oracle.com/technetwork/java/javase/downloads/index.html  **单击红框中标出的download按钮下载**  **注意要先选择Accept License Agreement 之后下载Windows对应的jdk(JDK10 不支持X86的系统)**     **全部默认">
+<meta name="keywords" content="Java环境">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java环境搭建">
+<meta property="og:url" content="https://gushiii.github.io/2018/07/17/Java环境搭建/index.html">
+<meta property="og:site_name" content="Gushiii">
+<meta property="og:description" content="JDK安装和配置下载JDK在Oracle官网下载 1http://www.oracle.com/technetwork/java/javase/downloads/index.html  **单击红框中标出的download按钮下载**  **注意要先选择Accept License Agreement 之后下载Windows对应的jdk(JDK10 不支持X86的系统)**     **全部默认">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://s1.ax2x.com/2018/07/17/qf1Kh.png">
+<meta property="og:image" content="https://s1.ax2x.com/2018/07/17/qxMHl.png">
+<meta property="og:image" content="https://s1.ax2x.com/2018/07/17/qxh0G.png">
+<meta property="og:image" content="https://s1.ax2x.com/2018/07/17/qxySE.png">
+<meta property="og:image" content="https://s1.ax2x.com/2018/07/17/qxaTQ.png">
+<meta property="og:image" content="https://s1.ax2x.com/2018/07/17/qxr6a.png">
+<meta property="og:image" content="https://s1.ax2x.com/2018/07/17/q27oS.png">
+<meta property="og:image" content="https://s1.ax2x.com/2018/07/18/q7kGd.png">
+<meta property="og:image" content="https://s1.ax2x.com/2018/07/18/q7lER.png">
+<meta property="og:image" content="https://s1.ax2x.com/2018/07/18/q787r.png">
+<meta property="og:image" content="https://s1.ax2x.com/2018/07/18/q7fYY.png">
+<meta property="og:updated_time" content="2018-07-17T23:41:42.363Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Java环境搭建">
+<meta name="twitter:description" content="JDK安装和配置下载JDK在Oracle官网下载 1http://www.oracle.com/technetwork/java/javase/downloads/index.html  **单击红框中标出的download按钮下载**  **注意要先选择Accept License Agreement 之后下载Windows对应的jdk(JDK10 不支持X86的系统)**     **全部默认">
+<meta name="twitter:image" content="https://s1.ax2x.com/2018/07/17/qf1Kh.png">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/pace.min.js"></script>
+  
 
   
-    <meta property="og:image" content=""/>
   
 
-  <link href="/imgs/favicon.ico" rel="icon" type="image/x-ico">
-  <link rel="alternate" href="/atom.xml" title="Gushiii" type="application/atom+xml">
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
-  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  <script src="//libs.baidu.com/jquery/1.8.0/jquery.min.js"></script>
 </head>
 
-
 <body>
-  <header><div>
-		
-			<div id="imglogo">
-				<a href="/"><img src="/imgs/logo.png" alt="Gushiii" title="Gushiii"/></a>
-			</div>
-			
-			<div id="textlogo">
-				<h1 class="site-name">Gushiii</h1>
-				<h2 class="blog-motto">Stay Hungary,Stay Foolish</h2>
-			</div>
-			<nav class="animated">
-				<ul>
-					
-						<li><a href="/">Home</a></li>
-					
-						<li><a href="/archives">Archives</a></li>
-					
-						<li><a href="/about">About</a></li>
-					
-					<li> <a href="/atom.xml">RSS</a> </li>
-				</ul>
-			</nav>			
-</div>
+  <div id="container">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer">
+        <div id="header-menu" class="header-menu-pos animated">
+            <div class="header-menu-container">
+                <a href="/" class="left">
+                    <span class="site-title">MinHow&#39;s Blog</span>
+                </a>
+                <nav id="header-menu-nav" class="right">
+                    
+                    <a  href="/">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    
+                    <a  href="/archives">
+                        <i class="fa fa-archive"></i>
+                        <span>Archives</span>
+                    </a>
+                    
+                    <a  href="/about">
+                        <i class="fa fa-user"></i>
+                        <span>About</span>
+                    </a>
+                    
+                </nav>
+                <a class="mobile-header-menu-button">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div id="header-row">
+            <div id="logo">
+                <a href="/">
+                    <img src="/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-info">
+                <div id="header-title">
+                    
+                    <h2>
+                        MinHow&#39;s Blog
+                    </h2>
+                    
+                </div>
+                <div id="header-description">
+                    
+                    <h3>
+                        一个专注 WEB 开发的技术博客
+                    </h3>
+                    
+                </div>
+            </div>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a title="MinHow" target="_blank" href="//minhow.com">
+                            <i class="fa fa-home fa-2x"></i></a>
+                    
+                        <a title="Github" target="_blank" href="//github.com/wongminho">
+                            <i class="fa fa-github fa-2x"></i></a>
+                    
+                        <a title="Weibo" target="_blank" href="//weibo.com/WongMinHo">
+                            <i class="fa fa-weibo fa-2x"></i></a>
+                    
+                        <a title="Twitter" target="_blank" href="//twitter.com/huangminhow">
+                            <i class="fa fa-twitter fa-2x"></i></a>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
 </header>
-  <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+      <div class="outer">
+        <section id="main" class="body-wrap"><article id="post-Java环境搭建" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
+    <h1 class="post-title" itemprop="name">
+      Java环境搭建
+    </h1>
+    <div class="post-title-bar">
+      <ul>
+          
+              <li>
+                  <i class="fa fa-book"></i>
+                  
+                      <a href="/categories/Java/">Java</a>
+                  
+              </li>
+          
+        <li>
+          <i class="fa fa-calendar"></i>  2018-07-17
+        </li>
+        <li>
+          <i class="fa fa-eye"></i>
+          <span id="busuanzi_value_page_pv"></span>
+        </li>
+      </ul>
+    </div>
   
-  <div class="post-content">
-    <header class="article-info clearfix">
-  <h1 itemprop="name">
-	Java环境搭建
-  </h1>
-  <p class="article-author">By
+
+          
+      </header>
     
-      <a href="https://gushiii.github.io" title="gushiii">gushiii</a>
-    </p>
-  <p class="article-time">
-    <time datetime="2018-07-17T09:44:15.000Z" itemprop="datePublished">2018-07-17</time>
-    更新日期:<time datetime="2018-07-17T23:41:42.363Z" itemprop="dateModified">2018-07-18</time>
-    
-  </p>
-</header>
-    <div class="entry">
-		
-        <h3 id="JDK安装和配置"><a href="#JDK安装和配置" class="headerlink" title="JDK安装和配置"></a>JDK安装和配置</h3><h4 id="下载JDK"><a href="#下载JDK" class="headerlink" title="下载JDK"></a>下载JDK</h4><pre><code>在Oracle官网下载
+    <div class="article-entry post-content" itemprop="articleBody">
+      
+            
+            <h3 id="JDK安装和配置"><a href="#JDK安装和配置" class="headerlink" title="JDK安装和配置"></a>JDK安装和配置</h3><h4 id="下载JDK"><a href="#下载JDK" class="headerlink" title="下载JDK"></a>下载JDK</h4><pre><code>在Oracle官网下载
 </code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://www.oracle.com/technetwork/java/javase/downloads/index.html</span><br></pre></td></tr></table></figure>
 <p><img src="https://s1.ax2x.com/2018/07/17/qf1Kh.png" width="50%" height="50%"></p>
 <pre><code>**单击红框中标出的download按钮下载**
@@ -124,199 +187,293 @@
 </code></pre><p><img src="https://s1.ax2x.com/2018/07/18/q787r.png" width="50%" height="50%"></p>
 <p><img src="https://s1.ax2x.com/2018/07/18/q7fYY.png" width="50%" height="50%"></p>
 
+            <div class="post-copyright">
+    <div class="content">
+        <p>最后更新： 2018年07月18日 07:41</p>
+        <p>原始链接： <a class="post-url" href="/2018/07/17/Java环境搭建/" title="Java环境搭建">https://gushiii.github.io/2018/07/17/Java环境搭建/</a></p>
+        <footer>
+            <a href="https://gushiii.github.io">
+                <img src="/images/logo.png" alt="gushiii">
+                gushiii
+            </a>
+        </footer>
     </div>
-    <footer>
-        
-  
-  <div class="categories">
-    <a href="/categories/Java/">Java</a>
-  </div>
-
-        
-  
-  <div class="tags">
-    <a href="/tags/Java环境/">Java环境</a>
-  </div>
-
-		<div class="bdsharebuttonbox">
-	<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
-	<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-	<a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
-	<a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
-	<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
-	<a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
-	<a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
-	<a href="#" class="bds_more" data-cmd="more"></a>
-	<a href="#" class="bds_count" data-cmd="count"></a>
 </div>
-<script>
-window._bd_share_config=
-{
-	"common":{
-		"bdSnsKey":{},
-		"bdText":"",
-		"bdMini":"2",
-		"bdMiniList":false,
-		"bdPic":"",
-		"bdStyle":"0",
-		"bdSize":"24"
-	},
-	"share":{},
-	"image":{
-		"viewList":["qzone","tsina","tqq","renren","weixin","fbook","twi"],
-		"viewText":"分享到：",
-		"viewSize":"24"
-	},
-	"selectShare":{
-		"bdContainerClass":null,
-		"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin","fbook","twi"]
-	}
-};
-with(document)0[
-	(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)
-];
-</script>    
-        <div class="clearfix"></div>
+
+      
+        
+            
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;">赏</a>
+</div>
+
+<div id="reward" class="post-modal reward-lay">
+    <a class="close" href="javascript:;" id="reward-close">×</a>
+    <span class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        请我吃糖~
+        <i class="icon icon-quote-right"></i>
+    </span>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/images/wechat_code.jpg" alt="打赏二维码">
+        </div>
+        <div class="reward-select">
+            
+            <label class="reward-select-item checked" data-id="wechat" data-wechat="/images/wechat_code.jpg">
+                <img class="reward-select-item-wechat" src="/images/wechat.png" alt="微信">
+            </label>
+            
+            
+            <label class="reward-select-item" data-id="alipay" data-alipay="/images/alipay_code.jpg">
+                <img class="reward-select-item-alipay" src="/images/alipay.png" alt="支付宝">
+            </label>
+            
+        </div>
+    </div>
+</div>
+
+
+        
+    </div>
+    <footer class="article-footer">
+        
+        
+<div class="post-share">
+    <a href="javascript:;" id="share-sub" class="post-share-fab">
+        <i class="fa fa-share-alt"></i>
+    </a>
+    <div class="post-share-list" id="share-list">
+        <ul class="share-icons">
+          <li>
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://gushiii.github.io/2018/07/17/Java环境搭建/&title=《Java环境搭建》 — Gushiii&pic=https://gushiii.github.ioimages/logo.png" data-title="微博">
+              <i class="fa fa-weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a class="weixin share-sns" id="wxFab" href="javascript:;" data-title="微信">
+              <i class="fa fa-weixin"></i>
+            </a>
+          </li>
+          <li>
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://gushiii.github.io/2018/07/17/Java环境搭建/&title=《Java环境搭建》 — Gushiii&source=Blog" data-title="QQ">
+              <i class="fa fa-qq"></i>
+            </a>
+          </li>
+          <li>
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://gushiii.github.io/2018/07/17/Java环境搭建/" data-title="Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Java环境搭建》 — Gushiii&url=https://gushiii.github.io/2018/07/17/Java环境搭建/&via=https://gushiii.github.io" data-title="Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://gushiii.github.io/2018/07/17/Java环境搭建/" data-title="Google+">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        </ul>
+     </div>
+</div>
+<div class="post-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;" id="wxShare-close">×</a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://gushiii.github.io/2018/07/17/Java环境搭建/" alt="微信分享二维码">
+</div>
+
+<div class="mask"></div>
+
+        
+        <ul class="article-footer-menu">
+            
+            
+  <li class="article-footer-tags">
+    <i class="fa fa-tags"></i>
+      
+    <a href="/tags/Java环境/" class="color2">Java环境</a>
+      
+  </li>
+
+        </ul>
+        
     </footer>
   </div>
 </article>
 
- <nav id="pagination" >
+
+    <aside class="post-toc-pos post-toc-top" id="post-toc">
+        <nav class="post-toc-wrap">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#JDK安装和配置"><span class="post-toc-text">JDK安装和配置</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#下载JDK"><span class="post-toc-text">下载JDK</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#配置JDK"><span class="post-toc-text">配置JDK</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
     
-    <a href="/2018/07/18/Java基础语法/" class="alignleft prev" title="Java基础语法">Java基础语法</a>
-    
-    
-    <a href="/2018/07/16/hello-world/" class="alignright next" title="Hello World">Hello World</a>
-    
-    <div class="clearfix"></div>
+
+<nav id="article-nav">
+  
+    <a href="/2018/07/18/Java基础语法/" id="article-nav-newer" class="article-nav-link-wrap">
+
+      <span class="article-nav-title">
+        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+        
+          Java基础语法
+        
+      </span>
+    </a>
+  
+  
+    <a href="/2018/07/16/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">Hello World</span>
+      <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+    </a>
+  
 </nav>
 
 
-</div></div>
-    <aside id="sidebar" class="alignright">
-  <div class="search">
-  <form action="//google.com/search" method="get" accept-charset="utf-8">
-    <input type="search" name="q" results="0" placeholder="搜索">
-    <input type="hidden" name="q" value="site:gushiii.github.io">
-  </form>
-</div>
 
-  
-<div class="widget tag">
-  <h3 class="title">分类</h3>
-  <ul class="entry">
-  
-    <li><a href="/categories/Java/">Java</a><small>2</small></li>
-  
-  </ul>
-</div>
+    
+</section>
+        
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
 
 
-  
-<div class="widget tagcloud">
-  <h3 class="title">标签云</h3>
-  <div class="entry">
-    <a href="/tags/Java环境/" style="font-size: 10px;">Java环境</a> <a href="/tags/Java语法/" style="font-size: 10px;">Java语法</a>
+      <p>
+        Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
+      &copy; 2018 gushiii<br>
+      </p>
+    </div>
   </div>
-</div>
-
-
-  <iframe width="100%" height="140" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1923610190&verifier=6af5ad6a&colors=fafafa,fafafa,666666,0082cb,ecfbfd&dpc=1"></iframe>
-
-  <div class="widget tag">
-<h3 class="title">友情链接</h3>
-<ul class="entry">
-<li><a href="http://opiece.me" title="Chillax's Blog" target="_blank">Chillax</a></li>
-</ul>
-</div>
-</aside>
-    <div class="clearfix"></div>
-  </div>
-  <footer id="footer"><div id="footer" >
-	
-	<div class="line">
-		<span></span>
-		<div class="author"></div>
-	</div>
-	
-	
-	<section class="info">
-		<p> 有问题联系QQ <br/>
-			1726143054</p>
-	</section>
-	 
-	<div class="social-font clearfix">
-		
-		
-		
-		<a href="https://github.com/gushiii" target="_blank" title="github"></a>
-		
-		
-		<a href="https://www.facebook.com/gushiii" target="_blank" title="facebook"></a>
-		
-		
-		
-		<a href="mailto:1726143054@qq.com" target="_blank" class="icon-email" title="Email Me"></a>
-		
-	</div>
-		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/huangjunhui/concise" target="_blank" title="Concise">Concise</a> © 2018 
-		
-		<a href="https://gushiii.github.io/about" target="_blank" title="gushiii">gushiii</a>
-		
-		</p>
-</div>
 </footer>
-  <script src="//libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
-<script src="/js/jquery.imagesloaded.min.js"></script>
-<script src="/js/gallery.js"></script>
-<script src="/js/counter.js"></script>
-
-
-
-
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-<script type="text/javascript">
-(function($){
-  $('.fancybox').fancybox();
-})(jQuery);
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var mihoConfig = {
+      root: "https://gushiii.github.io",
+      animate: true,
+      isHome: false,
+      share: true,
+      reward: 1
+  }
 </script>
-
-<div id="totop" style="position:fixed;bottom:100px;right:10px;cursor: pointer;">
-<a title="返回顶部"><img src="/imgs/scrollup.png"/></a>
+<div class="sidebar">
+    <div id="sidebar-search" title="Search">
+        <i class="fa fa-search"></i>
+    </div>
+    <div id="sidebar-category" title="Categories">
+        <i class="fa fa-book"></i>
+    </div>
+    <div id="sidebar-tag" title="Tags">
+        <i class="fa fa-tags"></i>
+    </div>
+    <div id="sidebar-top">
+        <span class="sidebar-top-icon"><i class="fa fa-angle-up"></i></span>
+    </div>
 </div>
-<script src="/js/totop.js"></script>
-<!-- mathjax config similar to math.stackexchange -->
+<div class="sidebar-menu-box" id="sidebar-menu-box">
+    <div class="sidebar-menu-box-container">
+        <div id="sidebar-menu-box-categories">
+            <a class="category-link" href="/categories/Java/">Java</a>
+        </div>
+        <div id="sidebar-menu-box-tags">
+            <a href="/tags/Java环境/" style="font-size: 10px;">Java环境</a> <a href="/tags/Java语法/" style="font-size: 10px;">Java语法</a>
+        </div>
+    </div>
+    <a href="javascript:;" class="sidebar-menu-box-close">&times;</a>
+</div>
+<div class="mobile-header-menu-nav" id="mobile-header-menu-nav">
+    <div class="mobile-header-menu-container">
+        <span class="title">Menus</span>
+        <ul class="mobile-header-menu-navbar">
+            
+            <li>
+                <a  href="/">
+                    <i class="fa fa-home"></i><span>Home</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/archives">
+                    <i class="fa fa-archive"></i><span>Archives</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/about">
+                    <i class="fa fa-user"></i><span>About</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile-header-tag-container">
+        <span class="title">Tags</span>
+        <div id="mobile-header-container-tags">
+            <a href="/tags/Java环境/" style="font-size: 10px;">Java环境</a> <a href="/tags/Java语法/" style="font-size: 10px;">Java语法</a>
+        </div>
+    </div>
+</div>
+<div class="search-wrap">
+    <span class="search-close">&times;</span>
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+            <i class="icon icon-lg icon-chevron-left"></i>
+        </a>
+        <input class="search-field" placeholder="Search..." id="keywords">
+        <a id="search-submit" href="javascript:;">
+            <i class="fa fa-search"></i>
+        </a>
+    <div class="search-container" id="search-container">
+        <ul class="search-result" id="search-result">
+        </ul>
+    </div>
+</div>
 
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      processEscapes: true
-    }
-  });
-</script>
+<div id="search-tpl">
+    <li class="search-result-item">
+        <a href="{url}" class="search-item-li">
+            <span class="search-item-li-title" title="{title}">{title}</span>
+        </a>
+    </li>
+</div>
+<script src="/js/search.js"></script>
+<script src="/js/main.js"></script>
 
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-      }
-    });
-</script>
 
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for(i=0; i < all.length; i += 1) {
-            all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-    });
-</script>
+  <script src="//cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
+  <div id="particles"></div>
+  <script src="/js/particles.js"></script>
 
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
+
+
+
+
+
+
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  <script src="//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js"></script>
+  <script src="/js/animate.js"></script>
+
+
+  <script src="/js/pop-img.js"></script>
+  <script>
+     $(".article-entry p img").popImg();
+  </script>
+
+  </div>
 </body>
 </html>
-
-
