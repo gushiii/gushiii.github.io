@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Gushiii</title>
+  
+  <subtitle>Stay Hungary,Stay Foolish</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://gushiii.github.io/"/>
+  <updated>2018-07-17T23:41:42.363Z</updated>
+  <id>https://gushiii.github.io/</id>
+  
+  <author>
+    <name>gushiii</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java环境搭建</title>
+    <link href="https://gushiii.github.io/2018/07/17/Java%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    <id>https://gushiii.github.io/2018/07/17/Java环境搭建/</id>
+    <published>2018-07-17T09:44:15.000Z</published>
+    <updated>2018-07-17T23:41:42.363Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="JDK安装和配置"><a href="#JDK安装和配置" class="headerlink" title="JDK安装和配置"></a>JDK安装和配置</h3><h4 id="下载JDK"><a href="#下载JDK" class="headerlink" title="下载JDK"></a>下载JDK</h4><pre><code>在Oracle官网下载</code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://www.oracle.com/technetwork/java/javase/downloads/index.html</span><br></pre></td></tr></table></figure><p><img src="https://s1.ax2x.com/2018/07/17/qf1Kh.png" width="50%" height="50%"></p><pre><code>**单击红框中标出的download按钮下载**</code></pre><p><img src="https://s1.ax2x.com/2018/07/17/qxMHl.png" width="50%" height="50%"></p><pre><code>**注意要先选择Accept License Agreement 之后下载Windows对应的jdk(JDK10 不支持X86的系统)**</code></pre><p>   <img src="https://s1.ax2x.com/2018/07/17/qxh0G.png" width="50%" height="50%"></p><pre><code>**全部默认，一路下一步**</code></pre><h4 id="配置JDK"><a href="#配置JDK" class="headerlink" title="配置JDK"></a>配置JDK</h4><pre><code>**右键我的电脑，单击属性，选择高级系统设置**</code></pre><p><img src="https://s1.ax2x.com/2018/07/17/qxySE.png" width="50%" height="50%"></p><p><img src="https://s1.ax2x.com/2018/07/17/qxaTQ.png" width="50%" height="50%"></p><pre><code>**选择环境变量**</code></pre><p><img src="https://s1.ax2x.com/2018/07/17/qxr6a.png" width="50%" height="50%"></p><pre><code>**在系统变量下单击新建，输入变量名“JAVA_HOME，输入变量值位JDK的安装路径”**</code></pre><p><img src="https://s1.ax2x.com/2018/07/17/q27oS.png" width="50%" height="50%"></p><pre><code>**选中系统变量中的path变量，单击编辑按钮在变量中添加**</code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">%JAVA_HOME%\bin //注意前后用分号隔开</span><br></pre></td></tr></table></figure><p><img src="https://s1.ax2x.com/2018/07/18/q7kGd.png" width="50%" height="50%"></p><pre><code>**在系统变量中新建CLASSPATH变量，变量值为 . **</code></pre><p><img src="https://s1.ax2x.com/2018/07/18/q7lER.png" width="50%" height="50%"></p><pre><code>**配置完成后在命令行中检验是否配置成功****具体步骤：**    1. 键盘输入win + r    2. 输入 cmd 单击运行    3. 在命令行中输入 javac 然后回车，出现以下结果则为配置成功    4. 若出现&quot;javac不是内部命令或外部命令，也不是可执行的程序或批处理文件&quot;，检查配置过程是否有错</code></pre><p><img src="https://s1.ax2x.com/2018/07/18/q787r.png" width="50%" height="50%"></p><p><img src="https://s1.ax2x.com/2018/07/18/q7fYY.png" width="50%" height="50%"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;JDK安装和配置&quot;&gt;&lt;a href=&quot;#JDK安装和配置&quot; class=&quot;headerlink&quot; title=&quot;JDK安装和配置&quot;&gt;&lt;/a&gt;JDK安装和配置&lt;/h3&gt;&lt;h4 id=&quot;下载JDK&quot;&gt;&lt;a href=&quot;#下载JDK&quot; class=&quot;headerlink
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="https://gushiii.github.io/categories/Java/"/>
+    
+    
+      <category term="Java环境" scheme="https://gushiii.github.io/tags/Java%E7%8E%AF%E5%A2%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://gushiii.github.io/2018/07/16/hello-world/"/>
+    <id>https://gushiii.github.io/2018/07/16/hello-world/</id>
+    <published>2018-07-16T04:19:40.751Z</published>
+    <updated>2018-07-16T04:19:40.752Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
