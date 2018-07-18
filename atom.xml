@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gushiii.github.io/"/>
-  <updated>2018-07-17T23:41:42.363Z</updated>
+  <updated>2018-07-18T02:57:03.230Z</updated>
   <id>https://gushiii.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java基础语法</title>
+    <link href="https://gushiii.github.io/2018/07/18/Java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
+    <id>https://gushiii.github.io/2018/07/18/Java基础语法/</id>
+    <published>2018-07-18T02:04:56.000Z</published>
+    <updated>2018-07-18T02:57:03.230Z</updated>
+    
+    <content type="html"><![CDATA[<p>##代码框架</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">访问修饰符 class 类名 &#123;</span><br><span class="line">    //程序入口（main方法）</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        //程序入口方法中的代码</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//比如：</span><br><span class="line">public class Test&#123;</span><br><span class="line">    public static void main(String[] args)&#123;</span><br><span class="line">        System.out.println(&quot;Hello World!&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>##数据类型</p><p><strong>Java中数据类型共有8种，按用途分为4个类别：整数型(int)、浮点型(float,double)、字符型(char)、布尔型(boolean)</strong></p><p>##变量</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//变量的声明</span></span><br><span class="line"><span class="comment">//数据类型 变量名;</span></span><br><span class="line"><span class="keyword">int</span> age;</span><br><span class="line"></span><br><span class="line"><span class="comment">//变量的初始化</span></span><br><span class="line"><span class="comment">//变量名 = 值;</span></span><br><span class="line">age = <span class="number">20</span>;</span><br></pre></td></tr></table></figure><p>##类型转换</p><ol><li>自动转换(隐式转换)<br>-无损转换<pre><code>byte -&gt; short -&gt; int -&gt; longchar -&gt; intint -&gt; doublefloat -&gt; double</code></pre>-有损精度的转换<pre><code>int -&gt; floatlong -&gt; double</code></pre></li><li>强制转换(显式转换)<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//(目标类型) 需要转换的值</span></span><br><span class="line"><span class="keyword">double</span> d = <span class="number">3.14</span>.5926;</span><br><span class="line"><span class="keyword">float</span> f = (<span class="keyword">float</span>)d; <span class="comment">//强转</span></span><br></pre></td></tr></table></figure></li></ol><p>##运算符</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;##代码框架&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="https://gushiii.github.io/categories/Java/"/>
+    
+    
+      <category term="Java语法" scheme="https://gushiii.github.io/tags/Java%E8%AF%AD%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>Java环境搭建</title>
